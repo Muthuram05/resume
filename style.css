@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+     background-color: #25262a; 
+     height: 100vh;
+     color: #fff;
+}
+.main{
+    background-color: #2d2f33;
+    width: 100%;
+    margin: auto;
+    height: 70%;  
+}
+.sub button{
+    border:  none;
+    background-color: #7cf1ad;
+    padding: 5px;
+    width: 150px;
+}
+.aboutMe{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 30%;
+    align-items: center;
+}
+.aboutMe .name span{
+    color: #7cf1ad;
+}
+.Quicklinks{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    float: right;
+} 
+.services{
+    width: 30%;
+}
+.services ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+.services ul li{
+    font-size: 20px;
+    padding: 50px;
+}
+.services ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.message{
+    color: #7cf1ad;
+    font-size: 20px;
+}
+
+.content{
+    display: flex;
+     width:100%;
+     height:100vh
+}
+.container{
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container2 h4{
+    opacity: 0.8;
+}
+.container2 h1{
+    padding-top: 5px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.container2 h3{
+    opacity: 0.9;
+    
+}
+.container .box{
+    background-color: #2d2f33;
+    width: 70%;
+    height: 150px;
+    justify-content: center;display: flex;flex-direction: column;padding-left: 30px;border-radius: 5px;
+    padding-right: 40px;
+}
+.box h3{
+    opacity: 0.8;
+    padding-top: 5px;
+}
+.box:hover h3{
+    opacity: 1;
+}
+.sub a{
+    color: #7cf1ad;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.box a{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+    padding-top: 30px;
+    transition: 2s;
+}
+.box:hover a{
+    opacity: 1;
+    text-decoration: underline;
+}
+.box:hover h2,.box:hover i{
+    color: #7cf1ad;
+    
+}
+.box h2{
+    transition: 1s;
+}
+.box i{
+    transition: 1s;
+}
+
+.img .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    background-color: #25262a;
+    border-radius: 50%;
+    height: 50px;
+}
+.img i{
+    font-size: 20px;
+}
