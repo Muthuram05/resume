@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div className="SearchInput main-contant">
+        <form action="https://formspree.io/f/xqknbdbl" method="POST" id="my-form">           
+        <div className="field" >
+        <p className="control has-icons-left has-icons-right">
+            <input className="input" type="email" placeholder="Email" name="email" required/>
+            <span className="icon is-small is-left">
+            <i className="fas fa-envelope"></i>
+            </span>
+            
+        </p>
+        </div>
+        <div className="field">
+        <p className="control has-icons-left">
+            <input className="input" type="text" placeholder="Name" name="name" required/>
+            <span className="icon is-small is-left">
+            <i className="fas fa-user"></i>
+            </span>
+        </p>
+        </div>
+        <div className="field">
+        <textarea class="textarea" placeholder="Your Message" name="message" required></textarea>  
+        </div>
+        
+        <div className="field">
+        <p className="control">
+            <button className="button is-success" >
+            Send
+            </button>
+        </p>
+        <p id="my-form-status"></p>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
