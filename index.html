@@ -5,33 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muthu Ram - Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/all.css">
     
 </head>
 <body>
     <div class="main">
-        <div style="display: flex; justify-content: space-between;align-items: center;">
-        <div class="aboutMe">
-            <div class="name">
-                <h3><span>Muthu</span>Raman</h3>
+        <div class="nav" style="display: flex; justify-content: space-between;align-items: center;">
+            <div class="aboutMe">
+                <div class="name">
+                    <h3><span>Muthu</span>Raman</h3>
+                </div>
+            </div>
+            <div class="services">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Notes</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="Quicklinks">
+                <p style='font-size:24px' class='fa message'>&#xf1d9;</p>  
             </div>
         </div>
-        <div class="services">
-            <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Notes</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-           </div>
-        <div class="Quicklinks">
-            <p style='font-size:24px' class='fa message'>&#xf1d9;</p>  
-        </div>
-        </div>
-        <div style="display: flex; width: 100%;">
+        <div class="con">
             <div class="sub" style="width: 50%;display: flex;justify-content: end;align-items: center;margin: auto;">
                 <div style="width: 70%;display: flex;justify-content: center;flex-direction: column;">
                     <button>Full-Stack Developer</button>
@@ -47,53 +45,34 @@
                 </div>
                 
             </div>
-            <style>
-                .img{
-                    width: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
+            <div class="img">
+                <div style="width: 80%;display: flex; position: relative; justify-content: center;align-items: center;">
+                    <img src="anonymous-removebg-preview.png" width="400px" height="400px">
+                    <div class="circle"></div>
+                    <div style="z-index: 100;">
+                        <div class="icon icon1">
+                            <i  class="fa-brands fa-python" style="color: #386e9d;font-size: 48px;"></i>
+                        </div>
+                        <div class="icon icon2">
+                            <i class="fa-brands fa-node-js" style="color: rgb(26, 232, 26);font-size: 35px;"></i>
+                        </div>    
+                        <div class="icon icon3">
+                            <i class="fa-brands fa-react" style="color: lightskyblue;font-size:28px;"></i>
+                        </div>
+                    </div>
+                </div>
                 
-                .img::before{
-                    content: '';
-                    position: absolute;
-                    width: 400px;
-                    height: 400px;
-                    background-color: #25262a;
-                    border-radius: 50%;
-                    z-index: 1;
-                    right: 260px;
-                }
-                .img img{
-                    z-index: 1;
-                }
-            </style>
-            <div class="img" >
-                <img src="anonymous-removebg-preview.png" width="400px" height="400px">
-                <div class="icon">
-                    <i class="fa-brands fa-angular angular" style="color: orangered;"></i>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-react" style="color: lightskyblue;"></i>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-python" style="color: blue;"></i>
-                </div>    
-                <div class="icon">
-                    <i class="fa-brands fa-node-js" style="color: green;"></i>
-                </div>
             </div>
         </div>
         
     </div>
     <!--  -->
     <div class="content">
-        <div class="container">
+        <div class="container1">
             <div class="box">
                 <div style="display: flex; justify-content: space-between;align-items: center;">
                     <h2>Design</h2>
-                    <i class="fa fa-pen-to-square"></i>
+                    <i class="fa fa-pen-to-square" style="font-size: 20px;"></i>
                 </div>
                 <h3>Create digital products with unique ideas</h3>
                 <a href="#">20 PROJECTS</a>
@@ -102,7 +81,7 @@
             <div class="box" >
                 <div style="display: flex; justify-content: space-between;align-items: center;">
                     <h2>Front-End</h2>
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-code" style="font-size: 20px;"></i>
                 </div>
                 <h3>I develop front-end coding super smooth</h3>
                 <a href="#">20 PROJECTS</a>
@@ -111,16 +90,18 @@
             <div class="box">
                 <div style="display: flex; justify-content: space-between;align-items: center;">
                     <h2>AI</h2>
-                    <i class="fa fa-thin fa-microchip"></i>
+                    <i class="fa fa-thin fa-microchip" style="font-size: 20px;"></i>
                 </div>
                 <h3>Create digital products with unique ideas</h3>
                 <a href="#">20 PROJECTS</a>
             </div>
         </div>
         <div class="container2">
-            <div style="width: 80%;">
+            <div style="width: 50%;height: 100%; ">
                 <h4>Introduce</h4>
+                <br>
                 <h1>Hello! I'm Muthu<br>Raman</h1>
+                <br>
                 <h3>Every great design begin with an <br> ever better story</h3>
                 <p>Who aims to be able to find an exciting and challenging entry level position in the
                     information and technology industry alongside a company who will continously motivate and drive me to do my best and 
@@ -130,16 +111,60 @@
            
         </div>
     </div>
-    <footer>
-        <div style="display: flex; justify-content: space-evenly; width: 30%;">
-            <i class="fa fa-linkedin" style="padding-top: 3px;"></i>
-            <h3>LinkedIn</h3>
+
+    <div class="one">
+        <footer>
+  
+          <div class="container">
+            <div class="sec aboutus">
+              <h2>ABOUT ME</h2>  
+              <h3>Muthu Raman</h3>
+              <p>Full-Stack Developer</p>
+              <br>
+              <ul class="sci">
+                <li><a href="https://github.com/muthuram05"><i class="fa fa-brands fa-github"></i></a></li>               
+                <li><a href="https://www.linkedin.com/in/muthu-raman-27339a212/"><i class="fa fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.hackerrank.com/mr032495"><i class="fa fa-brands fa-hackerrank"></i></a></li>
+                <li><a href="https://www.instagram.com/ram_vishwa123/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="sec quicklinks">
+              <h2>Quick links</h2>
+              <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">HELP </a></li>
+                <li><a href="#">FEEDBACK</a></li>
+              </ul>
+            </div>
+            <div class="sec contact">
+              <h2>CONTACT INFO</h2>
+              <ul class="info">
+                <li>
+  
+                  <span><i class="fa fa-map-marker" aria-hidden="true"></i></span><br>
+                  <span>Tirunelveli - Junction </span><br>
+                  <span>Tamil Nadu-627001,India</span>
+                </li>
+                <li>
+                  <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                  <p><a href="tel:+91 7639490537">+91 7639490537</a></p>
+                </li>
+                <li>
+                  <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                  <p><a href="mailto:mr032495@gmail.com">mr032495@gmail.com</a></p>
+                </li>
+  
+  
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <div class="copyright">
+          <p>© Copyright@ 2022 Muthu Raman. All Rights Reserved.</p>
         </div>
-        <div style="display: flex; justify-content: space-evenly; width: 30%;">
-            <i class="fab fa-github" style="padding-top: 3px;"></i>
-            <h3>GitHub</h3>
-        </div>
-    </footer>
+  
+      </div>
     <script src="https://kit.fontawesome.com/cbdef32651.js" crossorigin="anonymous"></script>
 </body>
 </html>
