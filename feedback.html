@@ -4,27 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>feedBack</title>
+    <script src="https://kit.fontawesome.com/cbdef32651.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <div className="SearchInput main-contant">
         <form action="https://formspree.io/f/xqknbdbl" method="POST" id="my-form">           
-        <div className="field" >
-        <p className="control has-icons-left has-icons-right">
-            <input className="input" type="email" placeholder="Email" name="email" required/>
-            <span className="icon is-small is-left">
-            <i className="fas fa-envelope"></i>
-            </span>
-            
-        </p>
-        </div>
         <div className="field">
-        <p className="control has-icons-left">
-            <input className="input" type="text" placeholder="Name" name="name" required/>
-            <span className="icon is-small is-left">
-            <i className="fas fa-user"></i>
-            </span>
-        </p>
+            <input type="radio" name="radio" value="Bad">
+            <input type="radio" name="radio" value="Average"><i class="fa-solid fa-face-meh"></i>
+            <input type="radio" name="radio" value="Good"><i class="fa-solid fa-face-smile"></i>
         </div>
         <div className="field">
         <textarea class="textarea" placeholder="Your Message" name="message" required></textarea>  
@@ -36,9 +27,10 @@
             Send
             </button>
         </p>
-        <p id="my-form-status"></p>
         </div>
         </form>
     </div>
+    <script src="https://kit.fontawesome.com/cbdef32651.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

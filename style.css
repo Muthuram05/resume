@@ -4,19 +4,69 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.con{
-    display: flex; width: 100%;
-}
+
 body{
      background-color: #25262a; 
      height: 100vh;
      color: #fff;
+     position: relative;
+}
+.body.open #popup{
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: visible;
+}
+.body #popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   visibility: hidden;
 }
 .main{
     background-color: #2d2f33;
-    width: 100%;
-    margin: auto;
+    width: 100%;    
     height: 70%;  
+}
+.nav{
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 100px;
+     width: 100%;
+}
+.aboutMe{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    align-items: center;
+}
+.aboutMe .name span{
+    color: #7cf1ad;
+    font-size: 34px;
+}
+.aboutMe .name h3{
+    font-size: 34px;
+}
+.services{
+    width: 30%;
+    padding-right: 30px;
+}
+.services ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.services ul li{
+    font-size: 20px;
+}
+.services ul li a{
+    text-decoration: none;
+    color: #fff;
 }
 .sub button{
     border:  none;
@@ -24,47 +74,14 @@ body{
     padding: 5px;
     width: 150px;
 }
-.aboutMe{
-    display: flex;
-    justify-content: space-evenly;
-    height: 100px;
-    width: 30%;
-    align-items: center;
-}
-.aboutMe .name span{
-    color: #7cf1ad;
-}
-.Quicklinks{
-    width: 20%;
-    height: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    float: right;
-} 
-.services{
-    width: 30%;
-}
-.services ul{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-}
-.services ul li{
-    font-size: 20px;
-    padding: 50px;
-}
-.services ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-
 .message{
     color: #7cf1ad;
     font-size: 20px;
 }
-
+.con{
+    display: flex; 
+    width: 100%;
+}
 .content{
     display: flex;
      width:100%;
@@ -110,7 +127,11 @@ body{
     background-color: #2d2f33;
     width: 70%;
     height: 150px;
-    justify-content: center;display: flex;flex-direction: column;padding-left: 30px;border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    border-radius: 5px;
     padding-right: 40px;
     transition: all .20s ease;
     box-shadow: 0 0 10px #202023;
@@ -206,180 +227,3 @@ body{
 .img img{
     z-index: 1;
 }
-/* footer */
-footer{
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 50px 100px;
-    background-color: rgb(24, 24, 24);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer .container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    
-}
-
-footer .container .sec{
-    margin-right: 30px;
-}
-
-footer .container .sec.aboutus{
-    width: 40%;
-}
-
-footer .container h2{
-    position: relative;
-    color: #fff;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-footer .container h2::before{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: #0be968;
-
-}
-
-footer p{
-    color: #999;
-}
-
-.sci{
-    margin-top: 20px;
-    display: flex;
-
-}
-
-.sci li{
-    list-style: none;
-}
-
-.sci li a{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #222;
-    display: flex;
-    color: #999;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.sci li a:hover{
-    transform: scale(1.3);
-}
-
-
-.sci li a .fa{
-    color: #fff;
-    font-size: 20px;
-}
-
-.quicklinks{
-
-    position: relative;
-    width: 25%;
-}
-.quicklinks ul li{
-    list-style: none;
-}
-
-
-.quicklinks ul li a{
-    color: #999;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-
-.quicklinks ul li a:hover{
-    color: #fff;
-
-}
-
-.contact{
-    width: calc(35% -60px);
-    margin-right: 0 !important;
-}
-.contact .info{
-    position: relative;
-    margin-bottom: 16px;
-
-}
-
-.contact .info li span:nth-child(1){
-    color: #fff;
-    font-size: 20px;
-    margin-right: 10px;
-}
-.contact .info li{
-    list-style: none;
-}
-
-.contact .info li span{
-    color: #999;
-}
-.contact .info li a{
-    color: #999;
-    text-decoration: none;
-}
-.contact .info li a:hover{
-    color: #fff;
-}
-.copyright{
-    width: 100%;
-    background-color: #181818;
-    padding: 8px 100px;
-    text-align: center;
-    color: #999;
-
-}
-
-@media(max-width:991px){
-    footer{
-        padding: 40px;
-    }
-    footer .container
-    {
-        flex-direction: column;
-    }
-    footer .container .sec{
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-    footer .container .sec.sec.aboutus,.quicklinks,.contact{
-        width: 100%;
-    }
-    .copyright{
-        padding: 8px 40px;
-    }
-    .content{
-        flex-direction: column;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .content .container1,.content .container2{
-        height: 100vh;
-    }
-
-}
-
