@@ -162,16 +162,6 @@ footer p{
     .copyright{
         padding: 8px 40px;
     }
-    .content{
-        flex-direction: column;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .content .container1,.content .container2{
-        height: 100vh;
-    }
 
 }
 
